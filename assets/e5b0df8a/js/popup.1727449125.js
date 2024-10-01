@@ -1,0 +1,1 @@
+$.fn.extend({grPopup:function(settings){return GR.wrapResource(this,'GRPopup',settings);}});GR.resources.GRPopup=function(){var me=this;me.defaultSettings={modal:null,onShow:function(){}};me.init=function(){me.element.click(function(){me.settings.modal.modal('show');me.settings.onShow();return false;});};};
